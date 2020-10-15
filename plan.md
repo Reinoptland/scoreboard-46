@@ -32,7 +32,7 @@ Storage: State of a component
 - [x] CRA
 - [x] Making a component
 - [x] Import the component and use it
-- [] Hardcode the players (as state)
+- [x] Hardcode the players (as state)
 - [] Display the the players, map -> JSX
 
 ## As a group of players we want to add a player, so we can play with new people
