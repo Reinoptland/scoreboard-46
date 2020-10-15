@@ -43,7 +43,10 @@ Storage: State of a component
 - [x] UI
   - Button
   - Input field
-- [] Eventlisteners & handlers
+- [x] Eventlisteners & handlers
+  - onChange
+  - onClick
+    - event.preventDefault() -> do not refresh the page
 - [] Data
   - New id for the player
   - name (coming for the input field)
