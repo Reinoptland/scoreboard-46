@@ -53,5 +53,5 @@ Storage: State of a component
 - [x] Data
   - New id for the player
   - name (coming for the input field)
-- [] Update the state
+- [x] Update the state
   - setter -> setPlayers

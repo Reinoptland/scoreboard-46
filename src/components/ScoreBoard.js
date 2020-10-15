@@ -18,6 +18,22 @@ export default function ScoreBoard() {
   function addPlayerToState(playerName) {
     const newId = Math.floor(Math.random() * 1000000000);
     console.log("DO WE HAVE THE DATA", newId, playerName);
+
+    const newPlayer = {
+      id: newId,
+      name: playerName,
+    };
+
+    // players.push(newPlayer) -> it works, but you shouldn't
+    // players.push(newPlayer);
+    // console.log(players);
+
+    // YES, like this
+    // create a new array with all the players from before
+    // [...players], add another player, [...players, newPlayer]
+    const updatedPlayers = [...players, newPlayer];
+
+    setPlayers(updatedPlayers);
   }
 
   console.log(players);
