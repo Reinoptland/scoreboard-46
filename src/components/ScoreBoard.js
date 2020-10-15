@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Player from "./Player";
 
 export default function ScoreBoard() {
   const [players, setPlayers] = useState([
@@ -13,5 +14,14 @@ export default function ScoreBoard() {
   ]);
 
   console.log(players);
-  return <div>ScoreBoard</div>;
+  return (
+    <div>
+      ScoreBoard
+      <div>
+        {players.map((player) => {
+          return <Player key={player.id} name={player.name} />;
+        })}
+      </div>
+    </div>
+  );
 }
