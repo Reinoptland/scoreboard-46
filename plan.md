@@ -2,10 +2,14 @@
 
 - How to make a form in react
   - What is a controlled form & why do we use it
-  - Pitfill to avoid (gotchas)
+  - Pitfall to avoid when making (gotchas)
+    - If you make a form use event.preventDefault()
 - Callback props
   - Why do we use them
   - How do your write them step by step
+    - Define in the parent
+    - Pass to the child component as a prop -> console.log(props)
+    - Call in the child component
 
 ## As a group of players, I want see the name of everyone who is playing, so we know who is playing
 

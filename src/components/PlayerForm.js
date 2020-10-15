@@ -4,10 +4,11 @@ export default function PlayerForm(props) {
   console.log("PROPS IN PLAYER FORM:", props);
   // Controlled Form:
   // The values of the form are managed by the state
-  const [name, setName] = useState("");
+  const [name, setName] = useState(localStorage.getItem("name") || "");
 
   function handleNameChange(event) {
     // console.log(event.target.value);
+    localStorage.setItem("name", event.target.value);
     setName(event.target.value);
   }
 
@@ -16,6 +17,8 @@ export default function PlayerForm(props) {
     console.log("add player", name);
     // CALL CALLBACK, PASS IN NAME AS AN ARGUMENT
     props.addPlayerToState(name);
+    localStorage.removeItem("name");
+    setName("");
   }
 
   return (
