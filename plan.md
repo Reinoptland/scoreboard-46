@@ -47,7 +47,10 @@ Storage: State of a component
   - onChange
   - onClick
     - event.preventDefault() -> do not refresh the page
-- [] Data
+- [x] Define a function (callback prop) in ScoreBoard
+- [x] Pass the callback prop down the form
+- [x] Call our callback prop and pass in name as an argument
+- [x] Data
   - New id for the player
   - name (coming for the input field)
 - [] Update the state

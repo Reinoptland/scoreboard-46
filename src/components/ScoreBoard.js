@@ -14,6 +14,12 @@ export default function ScoreBoard() {
     },
   ]);
 
+  // DEFINE CALLBACK PROP
+  function addPlayerToState(playerName) {
+    const newId = Math.floor(Math.random() * 1000000000);
+    console.log("DO WE HAVE THE DATA", newId, playerName);
+  }
+
   console.log(players);
   return (
     <div>
@@ -23,7 +29,8 @@ export default function ScoreBoard() {
           return <Player key={player.id} name={player.name} />;
         })}
       </div>
-      <PlayerForm />
+      {/* PASS CALLBACK PROP DOWN */}
+      <PlayerForm addPlayerToState={addPlayerToState} />
     </div>
   );
 }

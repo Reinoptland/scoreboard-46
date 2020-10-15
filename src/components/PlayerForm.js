@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-export default function PlayerForm() {
+export default function PlayerForm(props) {
+  console.log("PROPS IN PLAYER FORM:", props);
   // Controlled Form:
   // The values of the form are managed by the state
   const [name, setName] = useState("");
@@ -13,6 +14,8 @@ export default function PlayerForm() {
   function handleAddPlayer(event) {
     event.preventDefault(); // do not resfresh, this is 2020
     console.log("add player", name);
+    // CALL CALLBACK, PASS IN NAME AS AN ARGUMENT
+    props.addPlayerToState(name);
   }
 
   return (
