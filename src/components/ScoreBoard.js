@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Player from "./Player";
+import PlayerForm from "./PlayerForm";
 
 export default function ScoreBoard() {
   const [players, setPlayers] = useState([
@@ -22,6 +23,7 @@ export default function ScoreBoard() {
           return <Player key={player.id} name={player.name} />;
         })}
       </div>
+      <PlayerForm />
     </div>
   );
 }

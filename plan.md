@@ -33,6 +33,19 @@ Storage: State of a component
 - [x] Making a component
 - [x] Import the component and use it
 - [x] Hardcode the players (as state)
-- [] Display the the players, map -> JSX
+- [x] Display the the players, map -> JSX
 
 ## As a group of players we want to add a player, so we can play with new people
+
+### Making the input dynamic
+
+- [x] Make a new component
+- [x] UI
+  - Button
+  - Input field
+- [] Eventlisteners & handlers
+- [] Data
+  - New id for the player
+  - name (coming for the input field)
+- [] Update the state
+  - setter -> setPlayers
